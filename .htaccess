@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$0 [PT,L]  
+#RewriteRule ^index.php/page?q=$1 [L,QSA] 
+
+#RewriteRule ^index.php/page/?q=$1 [L,QSA] 
+
+#RewriteRule ^people-in-(.*) /people.php?county=$1 [L]
+#php_value upload_max_filesize 100M
+#php_value post_max_size 100M
+#php_value max_execution_time 200
+#php_value max_input_time 200
